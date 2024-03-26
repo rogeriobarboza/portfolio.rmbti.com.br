@@ -1,0 +1,25 @@
+.divBody{
+    z-index: 0;
+    background-color: rgb(153, 153, 153);
+    height: 80vh;
+    
+}
+
+.divContBody{
+    display: flex;
+    justify-content: center;
+}
+
+.divTxtBody {
+    padding: 5%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-style: solid;
+    border-color:rgb(66, 66, 66);
+    
+}
+
+.txtBody {
+    text-align: center;
+}

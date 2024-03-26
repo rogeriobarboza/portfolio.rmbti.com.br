@@ -1,0 +1,30 @@
+.divFooter{
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    
+}
+
+.divFooterContente{
+    display: flex;
+    justify-content: center;
+
+}
+
+.divTxtFooter{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-style: solid;
+    border-color:rgba(66, 66, 66, 0);
+}
+
+.txtFooter {
+    color: rgb(173, 173, 173);
+    text-align: center;
+    transform: translate(0, 30%);
+}
