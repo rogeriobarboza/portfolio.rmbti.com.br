@@ -1,25 +1,39 @@
-.divBody{
-    z-index: 0;
-    background-color: rgb(153, 153, 153);
-    height: 80vh;
-    
+body {
+    position: relative;
+    background-color: rgb(228, 228, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.divContBody{
+.mainContent {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; Centraliza horizontalmente  */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Ajusta para uma única coluna */
+
+    border-style: solid;
+    border-color: rgb(0, 46, 252);
 }
 
-.divTxtBody {
-    padding: 5%;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+.content {
+    margin: 1%;
     border-style: solid;
-    border-color:rgb(66, 66, 66);
+    border-color: rgb(252, 0, 0);
+
+    padding: 2%;
+    width: fit-content;
+    display: block;
+    align-items: stretch; /* "center" Centraliza verticalmente. "stretch" Estica o pai para coincidir com a altura do filho */
+    justify-content: center; /* "center" Centraliza horizontalmente. "stretch" Estica o pai para coincidir com a largura do filho */
+}
+
+.txtBox {
+    margin-top: 2%;
+    text-align: center;
     
 }
-
-.txtBody {
+h1, p {
     text-align: center;
+    color: black;
+    margin:2%;
 }
+
