@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>RMB Ti</title>
-    
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/flip-pages.css">
 
-    <script src="js/header.js" defer></script>
-    <script src="js/flip-pages.js" defer></script>
-</head>
+<?php
 
-<body>
+require "configs/env/urls.php";
+header("location: ".$contPages."home.php");
+exit;
 
-    <?php
-    include "header.php";
-
-    include "projects/flip-pages.php";
-
-    include "footer.php";
-    ?> 
-    
-</body>
-</html>
+?> 

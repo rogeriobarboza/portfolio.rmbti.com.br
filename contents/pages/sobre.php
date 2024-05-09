@@ -1,22 +1,29 @@
+<?php
+
+    require "../../configs/env/urls.php";
+
+?>
+
+<!-- <?php echo $domain ?> -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMB Ti</title>
     
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/flip-pages.css">
+    <link rel="stylesheet" href="<?php echo $headers ?>header.css">
+    <link rel="stylesheet" href="<?php echo $bodys ?>body.css">
+    <link rel="stylesheet" href="<?php echo $footers ?>footer.css">
 
-    <script src="../js/header.js" defer></script>
-    <script src="../js/flip-pages.js" defer></script>
+    <script src="<?php echo $headers ?>header.js" defer></script>
 </head>
+
 <body>
 
-    <?php include "../header.php"; ?>
+    <?php include "../../layouts/header/header.php"; ?>
 
     <div class="txtBox">
     <h1>SOBRE</h1><br>
@@ -34,7 +41,8 @@ conclusão em 2024.
     </p>                
     </div>
 
-    <?php include "../footer.php";?> 
+    <?php include "../../layouts/footer/footer.php"; ?> 
     
 </body>
+
 </html>

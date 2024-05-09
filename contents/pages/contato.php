@@ -1,23 +1,29 @@
+<?php
+
+    require "../../configs/env/urls.php";
+
+?>
+
+<!-- <?php echo $domain ?> -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMB Ti</title>
     
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/flip-pages.css">
+    <link rel="stylesheet" href="<?php echo $headers ?>header.css">
+    <link rel="stylesheet" href="<?php echo $bodys ?>body.css">
+    <link rel="stylesheet" href="<?php echo $footers ?>footer.css">
 
-    <script src="../js/header.js" defer></script>
-    <script src="../js/flip-pages.js" defer></script>
+    <script src="<?php echo $headers ?>header.js" defer></script>
 </head>
+
 <body>
 
-    <?php
-    include "../header.php"; ?>
+    <?php include "../../layouts/header/header.php"; ?>
 
     <div class="txtBox">
         <h1>CONTATO</h1><br>
@@ -27,10 +33,9 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116897.09140258946!2d-46.422851!3d-23.71047605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4278871d7eef%3A0x9eaaca862adb4ede!2sSanto%20Andr%C3%A9%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1714479871411!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    
 
-    <?php include "../footer.php";
-    ?> 
+    <?php include "../../layouts/footer/footer.php"; ?> 
     
 </body>
+
 </html>

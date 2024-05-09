@@ -1,4 +1,3 @@
-
 console.log("Informações do array");
 var flipArray = document.getElementsByClassName("flip"); // ARRAY LIKE, HTMLCollection
 
