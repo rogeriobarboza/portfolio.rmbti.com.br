@@ -15,10 +15,10 @@
     <title>RMB Ti</title>
     
     <link rel="stylesheet" href="<?php echo $headers ?>header.css">
+    <script src="<?php echo $headers ?>header.js" defer></script>
+
     <link rel="stylesheet" href="<?php echo $bodys ?>body.css">
     <link rel="stylesheet" href="<?php echo $footers ?>footer.css">
-    
-    <script src="<?php echo $headers ?>header.js" defer></script>
     
 </head>
 
@@ -26,18 +26,9 @@
 
     <?php include "../../layouts/header/header.php"; ?>
 
-    <div class="mainContent">
-        <div class="content">
-            <?php
-            include "../projects/flip-show/flip-show.php";
-            ?>
-        </div>
-        <div class="content">
-            <?php
-            //include "../projects/flip-show/flip-show.php";
-            ?>
-        </div>
-    </div>
+    
+    <?php include "../../projects/flip-show/flip-show-thumb.php"; ?>
+    
 
     <?php include "../../layouts/footer/footer.php"; ?> 
     

@@ -7,9 +7,9 @@
     $headers = $domain."layouts/header/";
     $bodys = $domain."layouts/body/";
 
-// Pages
+// Contents
     $contPages = $domain."contents/pages/";
-    $contProjects = $domain."content/projects/";
+    $contProjects = $domain."projects/";
 
     
 
