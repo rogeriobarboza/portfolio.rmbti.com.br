@@ -1,7 +1,7 @@
 <?php
 
     require "../../configs/env/urls.php";
-    //include  "http://localhost//projetos-portfolio/portfolio.rmbti.com.br/configs/env/urls.php";
+    $page = "Flip Show";
 
 $img_1 = $contProjects."flip-show/imgs/img_1.jpg";
 $img_2 = $contProjects."flip-show/imgs/img_2.jpg";
@@ -13,28 +13,12 @@ $img_7 = $contProjects."flip-show/imgs/img_7.jpg";
 $img_8 = $contProjects."flip-show/imgs/img_8.jpg";
 $img_9 = $contProjects."flip-show/imgs/img_9.jpg";
 $img_10 = $contProjects."flip-show/imgs/img_10.jpg";
+
+include "../../layouts/header/header.php"; 
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flip Show</title>
-
-    
-    
-    <link rel="stylesheet" href="<?php echo $bodys ?>body.css">
-    <link rel="stylesheet" href="<?php echo $footers ?>footer.css">
-    
-
-    <link rel="stylesheet" href="<?php echo $contProjects ?>flip-show/flip-show.css">
-    <script src="<?php echo $contProjects ?>flip-show/flip-show.js" defer></script>
-</head>
-
-<body>
-
-<?php include "../../layouts/header/header.php"; ?>
+<link rel="stylesheet" href="<?php echo $contProjects ?>flip-show/flip-show.css">
+<script src="<?php echo $contProjects ?>flip-show/flip-show.js" defer></script>
 
 <div class="mainContent">
 
@@ -165,9 +149,4 @@ $img_10 = $contProjects."flip-show/imgs/img_10.jpg";
     
 </div>
 
-
-
 <?php include "../../layouts/footer/footer.php"; ?>
-
-</body>
-</html>

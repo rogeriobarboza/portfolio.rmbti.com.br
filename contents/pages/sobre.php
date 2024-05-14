@@ -1,48 +1,69 @@
 <?php
 
     require "../../configs/env/urls.php";
+    $page = "Sobre";
 
+    include "../../layouts/header/header.php"; 
+    
 ?>
 
-<!-- <?php echo $domain ?> -->
+<div class="mainContent">
 
-<!DOCTYPE html>
-<html lang="pt-br">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RMB Ti</title>
-    
-    <link rel="stylesheet" href="<?php echo $headers ?>header.css">
-    <link rel="stylesheet" href="<?php echo $bodys ?>body.css">
-    <link rel="stylesheet" href="<?php echo $footers ?>footer.css">
 
-    <script src="<?php echo $headers ?>header.js" defer></script>
-</head>
+    <div class="content">
+        <div class="txtBox">
+            <h1>SOBRE</h1>
+            <h2>ROGERIO MORAIS BARBOZA</h2> 
+            <p>42 anos, Santo André/SP.</p>
+            
+            <h3>FORMAÇÃO ACADÊMICA</h3>
+            <p>Cursando Superior Tecnólogo em Análise e Desenvolvimento de Sistemas pela UNICSUL com conclusão em 2024.</p>
 
-<body>
-
-    <?php include "../../layouts/header/header.php"; ?>
-
-    <div class="txtBox">
-    <h1>SOBRE</h1><br>
-    <p>ROGERIO MORAIS BARBOZA<br>
-    42 anos<br>
-    Santo André/SP<br>
-    linkedin.com/in/rogeriomoraisbarboza<br>
-    github.com/rogeriobarboza
-    </p><br><hr><br>
-    <h2>OBJETIVO:</h2>
-    <h2>estágio, vaga</h2><br>
-    <p>FORMAÇÃO ACADÊMICA<br>
-    Cursando superior tecnólogo em análise e desenvolvimento de sistemas - UNICSUL
-conclusão em 2024.
-    </p>                
+        </div>
     </div>
 
-    <?php include "../../layouts/footer/footer.php"; ?> 
-    
-</body>
 
-</html>
+    <section id="formComp">
+        <div class="content">
+            <div class="txtBox">
+                <h3>FORMAÇÃO COMPLEMENTAR</h3>
+                    <div id="cursos">
+                        <div id="listaSobre">
+                            <ul id="ulSobre">
+                                <li class="liSobre">Curso HTML5 e CSS3 - CURSO EM VIDEO</li>
+                                <li class="liSobre">Curso JavaScript - CURSO EM VIDEO</li>
+                                <li class="liSobre">Curso PHP - CURSO EM VIDEO</li>
+                                <li class="liSobre">Curso Java Desktop - SENAI</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="content">
+        <div class="txtBox">
+
+            <h3>INFORMAÇÕES ADICIONAIS</h3>
+
+                <div id="infoAdd">
+                    <div id="listaSobre">
+                        <ul id="ulSobre">
+                            <li class="liSobre">Aprendizado autodidata constante, por meio de pesquisas, comparação e análise de conteúdos</li>
+                            <li class="liSobre">Disponível para trabalho presencial, remoto ou híbrido</li>
+                            <li class="liSobre">Domínio de linguagem Java, php, HTML, CSS e JavasCript</li>
+                            <li class="liSobre">Configuração de Servidores em clouds AWS e GCP</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+</div> <!--Fim mainContent -->
+
+    <?php 
+        include "../../layouts/footer/footer.php";
+    ?> 

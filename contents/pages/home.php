@@ -1,32 +1,74 @@
 <?php
 
     require "../../configs/env/urls.php";
+    $page = "Home";
 
+    include "../../layouts/header/header.php";
 ?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
+<div class="mainContent">
     
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RMB Ti</title>
+
+
+    <div class="content" id="contNomeLinks">
+        <div id="nomeLinks">
+            <h1>Rogerio M. Barboza</h1>
+            <p>Desenvolvedor em desenvolvimento...</p>
+            <h1 class="areas">Backend - Frontend</h1>
+            <div class="divBtn">
+                <a href="https://github.com/rogeriobarboza"><button>GitHub</button></a>
+                <!-- <a href="https://www.linkedin.com/in/rogeriomoraisbarboza/"><button>linkedin</button></a>
+                <a href="<?php $contPages?>contato"><button>Contato</button></a> -->
+            </div>
+            <div class="divBtn">
+                <!-- <a href="https://github.com/rogeriobarboza"><button>GitHub</button></a> -->
+                <a href="https://www.linkedin.com/in/rogeriomoraisbarboza/"><button>linkedin</button></a>
+                <!-- <a href="<?php $contPages?>contato"><button>Contato</button></a> -->
+            </div>
+            <div class="divBtn">
+                <!-- <a href="https://github.com/rogeriobarboza"><button>GitHub</button></a>
+                <a href="https://www.linkedin.com/in/rogeriomoraisbarboza/"><button>linkedin</button></a> -->
+                <a href="<?php $contPages?>contato"><button>Contato</button></a>
+            </div>
+        </div>
+    </div><hr>
+
+    <div class="content" id="imgTxt">
+        <img src="imgs/rogerio-barboza.jpeg" id="imgPerfil" alt="">
+        <p id="imgDesc">42 anos, fotógrafo de eventos sociais em transição de carreira.</p>
+    </div>
+
+    <div class="content" id="resPro">
+        <div>
+            <h2>Sobre</h2>
+            <p>
+            Desenvolvedor por natureza, inicio no mundo do desenvolvimento acadêmico/profissional após me ver imerso em tecnologias de linguagens e softwares, em busca de melhorias e soluções para minhas atividades profissionais em outras áreas.
+            Em minha jornada venho desenvolvendo de modo autodidata, habilidades em análise, desenvolvimento e manutenção de sites e sistemas web utilizando linguagens de marcação e estilo como html, css, linguagens de programação javascript e php, softwares wordpress, banco de dados mysql e mariadb, Linux, Google Cloud Platform (GCP), Amazon Web Services (AWS).
+            </p>
+        </div>
+
+        <div id="divBtnSobre">
+        <button id="btnSobre"><a id="aSobre" href= "<?php echo $contPages ?>sobre.php">Mais informações</a></button>
+        </div>
+        
+    </div><br>
+
+    <h2 ID="destaque">PROJETO EM DESTAQUE</h2>
+
+
+        
+    <?php
+            echo "<hr>";
+            include "../../projects/flip-show/flip-show-thumb.php"; 
+    ?> 
+
+    <a href= "<?php echo $contPages ?>projetos.php">
+        <button> Mais projetos </button>
+    </a>
+
+</div> <!--Fim mainContent -->
+
+<?php
+
+    include "../../layouts/footer/footer.php"; 
     
-    <link rel="stylesheet" href="<?php echo $headers ?>header.css">
-    <script src="<?php echo $headers ?>header.js" defer></script>
-
-    <link rel="stylesheet" href="<?php echo $bodys ?>body.css">
-    <link rel="stylesheet" href="<?php echo $footers ?>footer.css">
-
-</head>
-
-<body>
-
-    <?php include "../../layouts/header/header.php"; ?>
-
-    <?php include "../../projects/flip-show/flip-show-thumb.php"; ?>
-
-    <?php include "../../layouts/footer/footer.php"; ?> 
-    
-</body>
-</html>
+?> 

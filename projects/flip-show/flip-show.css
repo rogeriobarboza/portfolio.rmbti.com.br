@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: center;
 
-    border-style: solid ;
+    border-style: none ;
     border-width: 1px;
     border-color: rgb(36, 36, 36);
 }
@@ -48,7 +48,7 @@
     margin-top: 1%;
     margin-bottom: 1%; 
 
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     border-color: rgb(38, 0, 255);
     
