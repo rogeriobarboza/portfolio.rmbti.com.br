@@ -61,9 +61,11 @@
             include "../../projects/flip-show/flip-show-thumb.php"; 
     ?> 
 
-    <a href= "<?php echo $contPages ?>projetos.php">
-        <button> Mais projetos </button>
-    </a>
+    <div id="btnMaisProj">
+        <a href= "<?php echo $contPages ?>projetos.php">
+            <button> Mais projetos </button>
+        </a>
+    </div>
 
 </div> <!--Fim mainContent -->
 

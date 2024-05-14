@@ -7,7 +7,7 @@ body {
 
 .mainContent {
     display: flex;
-    /* justify-content: center; Centraliza horizontalmente  */
+    justify-content: center; /*Centraliza horizontalmente  */
     align-items: center; /* Centraliza verticalmente */
     flex-direction: column; /* Ajusta para uma única coluna */
 
@@ -19,7 +19,7 @@ body {
     border-style: none;
     border-color: rgb(252, 0, 0);
 
-    padding: 25px;
+    /* padding: 25px; */
     width: fit-content;
     display: block;
     align-items: stretch; /* "center" Centraliza verticalmente. "stretch" Estica o pai para coincidir com a altura do filho */
@@ -33,7 +33,7 @@ body {
     background-attachment: fixed;
     
     display: flex;
-    width: 96.3%;
+    width: 100%;
     height: 81vh;
     border-style: none;
     border-color: #333;
@@ -41,8 +41,13 @@ body {
     justify-content: center;
 }
 
+#contNomeLinks:active {
+    background-size: 500%;
+}
+
 #nomeLinks {
-    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.80);
     border-style: none;
     border-color: #ce0000;
@@ -65,7 +70,14 @@ h1 {
 h2 {
     text-align: center;
     color: black;
-    margin:2%;
+    margin:5%;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    margin-top:30px;
+    padding-top: 25px;
 }
 
 p {
@@ -96,7 +108,8 @@ button {
 }
 
 #imgTxt {
-    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: block;
     width: 300px;
     align-content: center;
@@ -116,12 +129,15 @@ button {
     background-color: rgb(190, 190, 190);
     
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 #aSobre {
     color: brown;
 }
 
 #divBtnSobre {
+    margin-top: 25px;
     display: inline-block;
     width: fit-content;
     align-items: center;
@@ -135,11 +151,17 @@ button {
     width: 100%;
 }
 
+#btnMaisProj {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 #formComp {
     display: flex;
     background-color: lightgray;
     width: 100%;
     justify-content: center;
+    margin-top: 25px;
 }
 #cursos {
     display: flex;
@@ -155,7 +177,7 @@ button {
 
 #listaSobre {
     display:block;
-    border-style: solid;
+    border-style: none;
     border-color: #33333300;
 }
 

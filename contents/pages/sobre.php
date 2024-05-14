@@ -16,7 +16,7 @@
             <h2>ROGERIO MORAIS BARBOZA</h2> 
             <p>42 anos, Santo André/SP.</p>
             
-            <h3>FORMAÇÃO ACADÊMICA</h3>
+            <br><h3>FORMAÇÃO ACADÊMICA</h3>
             <p>Cursando Superior Tecnólogo em Análise e Desenvolvimento de Sistemas pela UNICSUL com conclusão em 2024.</p>
 
         </div>
@@ -26,14 +26,16 @@
     <section id="formComp">
         <div class="content">
             <div class="txtBox">
+
                 <h3>FORMAÇÃO COMPLEMENTAR</h3>
+
                     <div id="cursos">
                         <div id="listaSobre">
                             <ul id="ulSobre">
+                                <li class="liSobre">Curso Programação Java Desktop 120h - SENAI</li>
                                 <li class="liSobre">Curso HTML5 e CSS3 - CURSO EM VIDEO</li>
                                 <li class="liSobre">Curso JavaScript - CURSO EM VIDEO</li>
                                 <li class="liSobre">Curso PHP - CURSO EM VIDEO</li>
-                                <li class="liSobre">Curso Java Desktop - SENAI</li>
                             </ul>
                         </div>
                     </div>

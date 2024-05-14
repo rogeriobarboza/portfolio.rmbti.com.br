@@ -1,6 +1,6 @@
 <?php
 //=== Definições de URLs de Ambiente
-    $domain = "http://localhost/projetos-portfolio/dev-portfolio.rmbti.com.br/";
+    $domain = "https://portfolio.rmbti.com.br/";
     
 // Layouts
     $footers = $domain."layouts/footer/";
