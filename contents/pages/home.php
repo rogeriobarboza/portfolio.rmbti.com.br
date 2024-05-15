@@ -16,24 +16,18 @@
             <h1 class="areas">Backend - Frontend</h1>
             <div class="divBtn">
                 <a href="https://github.com/rogeriobarboza"><button>GitHub</button></a>
-                <!-- <a href="https://www.linkedin.com/in/rogeriomoraisbarboza/"><button>linkedin</button></a>
-                <a href="<?php $contPages?>contato"><button>Contato</button></a> -->
             </div>
             <div class="divBtn">
-                <!-- <a href="https://github.com/rogeriobarboza"><button>GitHub</button></a> -->
                 <a href="https://www.linkedin.com/in/rogeriomoraisbarboza/"><button>linkedin</button></a>
-                <!-- <a href="<?php $contPages?>contato"><button>Contato</button></a> -->
             </div>
             <div class="divBtn">
-                <!-- <a href="https://github.com/rogeriobarboza"><button>GitHub</button></a>
-                <a href="https://www.linkedin.com/in/rogeriomoraisbarboza/"><button>linkedin</button></a> -->
                 <a href="<?php $contPages?>contato"><button>Contato</button></a>
             </div>
         </div>
     </div><hr>
 
     <div class="content" id="imgTxt">
-        <img src="imgs/rogerio-barboza.jpeg" id="imgPerfil" alt="">
+        <img src="<?php echo $contPages ?>imgs/rogerio-barboza.jpeg" id="imgPerfil" alt="">
         <p id="imgDesc">42 anos, fotógrafo de eventos sociais em transição de carreira.</p>
     </div>
 
@@ -47,7 +41,7 @@
         </div>
 
         <div id="divBtnSobre">
-        <button id="btnSobre"><a id="aSobre" href= "<?php //echo $contPages ?>sobre">Mais informações</a></button>
+        <button id="btnSobre"><a id="aSobre" href= "sobre">Mais informações</a></button>
         </div>
         
     </div><br>
@@ -62,7 +56,7 @@
     ?> 
 
     <div id="btnMaisProj">
-        <a href= "<?php //echo $contPages ?>projetos">
+        <a href= "projetos">
             <button> Mais projetos </button>
         </a>
     </div>

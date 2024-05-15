@@ -8,7 +8,7 @@
     </div>
 
     <div class="content">
-        <a href="<?php //echo $contProjects?>flip-show"><!--flip-show/-->
+        <a href="flip-show">
             <img src="<?php echo $contProjects?>flip-show/thumb.png" alt="">
         </a>
     </div>

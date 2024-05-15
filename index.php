@@ -1,14 +1,6 @@
 <?php 
 
-// require "configs/env/urls.php"; header("location: ".$contPages."home.php");
-// exit;
-
 $rota = $_GET['url'] ?? 'home';
-
-//var_dump($rota);
-
-
-    //include "contents/pages/{$rota}.php";
 
 if (isset($rota)) {
 

@@ -1,10 +1,11 @@
+// Logs auxiliares
 console.log("Informações do array");
 var flipArray = document.getElementsByClassName("flip"); // ARRAY LIKE, HTMLCollection
 
 var flipArraySize = flipArray.length; // Pega o tamanho do array contando a partir da posição "0" ("0" que conta-se como "1") até a ultima posição
 console.log("-> Tamanho/contagem do array = "+flipArraySize);
 
-// PEGAR VALOR DE ATRIBUTO CSS (valores computados)
+// ESTUDO SOBRE PEGAR VALOR DE ATRIBUTO CSS (valores computados)
 
     // EXEMPLO: pegar valor de z-index de uma posição
         // Defina uma posição no array
@@ -40,6 +41,7 @@ var flip = 0;
 // Tras a 1ª imagem para frente (1ª posição no indice)  
 flipArray[flip].style.zIndex = mz; 
 
+// Logs auxiliares
 console.log("-> Posição/Flip inicial = "+flip)
 console.log("-> z-index/ordem inicial = "+mz);
 console.log("-----//-----");
@@ -86,6 +88,7 @@ function backBtn(){
     }
 }
 
+// Esta é uma forma provisória de renderizar as imagens previamente
 function autoplay(){
 
     var flipContainer = document.getElementById("flipContainer");
@@ -119,7 +122,7 @@ let zr = flipArraySize;
             
     }
 
-// Define a posição principal
+    // Define a posição principal
 
     if (start==1 && flip<flipArraySize-1) { // Limita o incremento para não eceder o array
         ++flip; // AVANÇA para o proximo Flip
@@ -165,7 +168,7 @@ function back() {
     
     let zl = -1;
 
- // Define a posição principal
+    // Define a posição principal
 
     if (end==1 && flip>0) { // Limita o incremento para não eceder o array
         --flip; // AVANÇA para o proximo Flip
@@ -191,9 +194,6 @@ function back() {
             console.log("Loop Back Time - Posição "+i+" recebeu z-index = "+zl);
         }
 
-            //zl = (flipArraySize-1)-flip;
-            //flipArray[flip].style.zIndex = zl;
-            //console.log("Loop Time - Posição "+flip+" recebeu z-index = "+zl);
 
     }, 600);
 
@@ -202,7 +202,5 @@ function back() {
         end = 1;
         start = 0;
     } 
-
-    //console.log("==//==");
     
 } // FIM FUNCTION BACK
