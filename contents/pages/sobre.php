@@ -1,9 +1,9 @@
 <?php
 
-    require "../../configs/env/urls.php";
+    require "configs/env/urls.php";
     $page = "Sobre";
 
-    include "../../layouts/header/header.php"; 
+    include "layouts/header/header.php"; 
     
 ?>
 
@@ -67,5 +67,5 @@
 </div> <!--Fim mainContent -->
 
     <?php 
-        include "../../layouts/footer/footer.php";
+        include "layouts/footer/footer.php";
     ?> 

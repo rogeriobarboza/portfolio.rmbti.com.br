@@ -1,6 +1,6 @@
 <?php
 
-    require "../../configs/env/urls.php";
+    require "configs/env/urls.php";
     $page = "Flip Show";
 
 $img_1 = $contProjects."flip-show/imgs/img_1.jpg";
@@ -14,7 +14,7 @@ $img_8 = $contProjects."flip-show/imgs/img_8.jpg";
 $img_9 = $contProjects."flip-show/imgs/img_9.jpg";
 $img_10 = $contProjects."flip-show/imgs/img_10.jpg";
 
-include "../../layouts/header/header.php"; 
+include "layouts/header/header.php"; 
 ?>
 
 <link rel="stylesheet" href="<?php echo $contProjects ?>flip-show/flip-show.css">
@@ -149,4 +149,4 @@ include "../../layouts/header/header.php";
     
 </div>
 
-<?php include "../../layouts/footer/footer.php"; ?>
+<?php include "layouts/footer/footer.php"; ?>

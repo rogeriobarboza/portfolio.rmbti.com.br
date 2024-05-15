@@ -1,8 +1,8 @@
 <?php
-    require "../../configs/env/urls.php";
+    require "configs/env/urls.php";
     $page = "Contato";
 
-    include "../../layouts/header/header.php";
+    include "layouts/header/header.php";
 ?>
 
     <div class="txtBox">
@@ -15,5 +15,5 @@
     </div>
 
 <?php
-    include "../../layouts/footer/footer.php";
+    include "layouts/footer/footer.php";
 ?> 

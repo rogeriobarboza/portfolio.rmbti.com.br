@@ -1,4 +1,4 @@
-<?php require "../../configs/env/urls.php"; ?>
+<?php require "configs/env/urls.php"; ?>
 
 <div class="mainContent">
 
@@ -8,7 +8,7 @@
     </div>
 
     <div class="content">
-        <a href="<?php echo $contProjects?>flip-show/flip-show.php">
+        <a href="<?php //echo $contProjects?>flip-show"><!--flip-show/-->
             <img src="<?php echo $contProjects?>flip-show/thumb.png" alt="">
         </a>
     </div>

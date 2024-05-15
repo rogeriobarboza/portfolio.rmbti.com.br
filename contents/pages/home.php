@@ -1,9 +1,9 @@
 <?php
 
-    require "../../configs/env/urls.php";
+    require "configs/env/urls.php";
     $page = "Home";
 
-    include "../../layouts/header/header.php";
+    include "layouts/header/header.php";
 ?>
 <div class="mainContent">
     
@@ -47,7 +47,7 @@
         </div>
 
         <div id="divBtnSobre">
-        <button id="btnSobre"><a id="aSobre" href= "<?php echo $contPages ?>sobre.php">Mais informações</a></button>
+        <button id="btnSobre"><a id="aSobre" href= "<?php //echo $contPages ?>sobre">Mais informações</a></button>
         </div>
         
     </div><br>
@@ -58,11 +58,11 @@
         
     <?php
             echo "<hr>";
-            include "../../projects/flip-show/flip-show-thumb.php"; 
+            include "projects/flip-show/flip-show-thumb.php"; 
     ?> 
 
     <div id="btnMaisProj">
-        <a href= "<?php echo $contPages ?>projetos.php">
+        <a href= "<?php //echo $contPages ?>projetos">
             <button> Mais projetos </button>
         </a>
     </div>
@@ -71,6 +71,6 @@
 
 <?php
 
-    include "../../layouts/footer/footer.php"; 
+    include "layouts/footer/footer.php"; 
     
 ?> 

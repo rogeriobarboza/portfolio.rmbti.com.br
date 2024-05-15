@@ -1,6 +1,6 @@
 <?php
 
-    require "../../configs/env/urls.php";
+    require "configs/env/urls.php";
 
 ?>
 
